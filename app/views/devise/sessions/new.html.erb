@@ -1,0 +1,62 @@
+<h2>Sign in</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :autofocus => true %></div>
+
+  <div><%= f.label :password %><br />
+  <%= f.password_field :password %></div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%>
+
+  <div><%= f.submit "Sign in" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+
+<span id="ceshi">
+  爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发爱上了的发生来得及发
+</span>
+
+<aside id="sidebar-second" class="sidebar">
+<div class="inner">
+
+<section class="block block-block" id="block-block-29">
+
+    <h4>承接业务</h4>
+
+  <div class="content">
+    <div style="padding:5px 10px;">
+<p>
+    W3cplus是一个致力于推广国内前端行业的技术博客。具有一支强大的团队，提供长期的前端项目外包，Drupal建站，Drupal主题制作服务，以及提供企业广告展示与招聘发布，有需要的请联系：</p>
+  <p>
+    QQ:<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=81059347&amp;site=qq&amp;menu=yes">81059347</a></p>
+  <p>
+    E-mail:<a target="_blank" href="mailto:w3cplus@hotmail.com">w3cplus@hotmail.com</a></p>
+</div>
+  </div>
+</section>
+
+<section class="block block-block" id="block-block-30">
+
+  <h4>
+    最新职位
+    <small class="pull-right">
+      <a target="_blank" href="http://www.lagou.com/jobs/list_%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91">更多</a>
+    </small>
+  </h4>
+
+  <div class="content">
+
+    <div id="lagouData">
+      <ul><li><a title="哇丫-19.5万招iOS开发工程师【深圳】" target="_blank" href="http://www.lagou.com:80/jobs/20268.html">哇丫-19.5万招iOS开发工程师【深圳】</a></li><li><a title="阿芙精油-7.8万招web前端开发工程师【北京】" target="_blank" href="http://www.lagou.com:80/jobs/10396.html">阿芙精油-7.8万招web前端开发工程师...</a></li><li><a title="口袋购物-15.6万招web前端开发工程师【杭州】" target="_blank" href="http://www.lagou.com:80/jobs/13024.html">口袋购物-15.6万招web前端开发工程...</a></li><li><a title="唯品会-18.2万招web前端开发工程师【广州】" target="_blank" href="http://www.lagou.com:80/jobs/19690.html">唯品会-18.2万招web前端开发工程师...</a></li><li><a title="拉勾招聘-19.5万招前端开发（可年后入职）【北京】" target="_blank" href="http://www.lagou.com:80/jobs/19986.html">拉勾招聘-19.5万招前端开发（可年后入...</a></li><li><a title="慧聪网-13万招JS前端开发工程师【北京】" target="_blank" href="http://www.lagou.com:80/jobs/18006.html">慧聪网-13万招JS前端开发工程师【北京...</a></li><li><a title="布丁移动-26万招ios开发工程师【北京】" target="_blank" href="http://www.lagou.com:80/jobs/2539.html">布丁移动-26万招ios开发工程师【北京】</a></li><li><a title="布丁移动-26万招Android开发工程师【北京】" target="_blank" href="http://www.lagou.com:80/jobs/1498.html">布丁移动-26万招Android开发工程...</a></li><li><a title="网银-京东子公司-26万招Javascript 前端开发工程师【北京】" target="_blank" href="http://www.lagou.com:80/jobs/14162.html">网银-京东子-26万招Javascrip...</a></li><li><a title="金山网络-19.5万招前端开发工程师【北京】" target="_blank" href="http://www.lagou.com:80/jobs/19970.html">金山网络-19.5万招前端开发工程师【北...</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</div>
+</aside>
