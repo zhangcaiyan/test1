@@ -21,15 +21,12 @@ class User < ActiveRecord::Base
             puts "#{ip} 无效"
           end
         end
-
       end
-
     end
-
 
   end
 
-  def check_ip?(ip)
+  def self.check_ip?(ip)
     agent = Mechanize.new
     ip, port = ip.split(":")
     agent.set_proxy(ip, port)
@@ -37,6 +34,7 @@ class User < ActiveRecord::Base
     begin
       page = agent.get "http://www.baidu.com"
       is_available = true
+      DailiIp.find_or_create_by(name: ip, port: port)
     rescue
     end
     is_available
